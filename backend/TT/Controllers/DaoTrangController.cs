@@ -48,7 +48,7 @@ namespace TT.Controllers
             }
             else return Ok("Xoa thanh cong");
         }
-        [HttpGet("Tim")]
+        [HttpGet("Tim"), Authorize]
         public IActionResult Tim([FromQuery] string? noidung, [FromQuery] string? noitochuc, [FromQuery] Pagination pagination)
         {
             var k = daoTrangService.Timkiem(noidung, noitochuc, pagination);

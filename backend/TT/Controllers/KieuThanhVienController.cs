@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Data;
 using TT.Constant;
 using TT.Entities;
 using TT.IService;
@@ -16,7 +18,7 @@ namespace TT.Controllers
         {
             kieuTVService = new KieuThanhVienService();
         }
-        [HttpPost]
+        [HttpPost, Authorize(Roles = "ADMIN")]
         public IActionResult Them(KieuThanhVien kieuThanhVien)
         {
             var k = kieuTVService.Them(kieuThanhVien);
@@ -26,7 +28,7 @@ namespace TT.Controllers
             }
             else return Ok("Them thanh cong");
         }
-        [HttpPut]
+        [HttpPut, Authorize(Roles = "ADMIN")]
         public IActionResult Sua(KieuThanhVien kieuThanhVien)
         {
             var k = kieuTVService.Sua(kieuThanhVien);
@@ -36,7 +38,7 @@ namespace TT.Controllers
             }
             else return Ok("Sua thanh cong");
         }
-        [HttpDelete("{kieuThanhVienId}")]
+        [HttpDelete("{kieuThanhVienId}"), Authorize(Roles = "ADMIN")]
         public IActionResult Xoa(int kieuThanhVienId)
         {
             var k = kieuTVService.Xoa(kieuThanhVienId);

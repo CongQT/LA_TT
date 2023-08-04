@@ -3101,11 +3101,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\TT\\TT\\TT.csproj",
+      "projectUniqueName": "D:\\TT\\backend\\TT\\TT.csproj",
       "projectName": "TT",
-      "projectPath": "D:\\C#\\TT\\TT\\TT.csproj",
+      "projectPath": "D:\\TT\\backend\\TT\\TT.csproj",
       "packagesPath": "C:\\Users\\84382\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\TT\\TT\\obj\\",
+      "outputPath": "D:\\TT\\backend\\TT\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\84382\\AppData\\Roaming\\NuGet\\NuGet.Config",
