@@ -1,0 +1,59 @@
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header{
+  background-color: white;
+}
+.head{
+  display: flex;
+  height: 60px;
+  padding: 8px;
+}
+.dk{
+  text-decoration: none;
+  color: #000;
+  width: 100px;
+  color: red;
+  margin-top: 12px;
+}
+.button{
+  border: 0px;
+}
+
+.logo{
+  margin-top: -35px;
+}
+.space{
+  width: 1480px;
+}
+.name{
+  font-weight: 500;
+  margin-top:12px;
+}
+.App-link {
+  color: #61dafb;
+}
+.profile{
+  display: flex;
+}
+.icon1{
+  margin-left: 20px;
+  font-size: 25px;
+  border-radius: 20px;
+  background-color: #F5F5F5;
+  padding: 8px;
+  margin-top: -10px;
+  color: #FF5126;
+  margin-top: 2px;
+}
+
+
